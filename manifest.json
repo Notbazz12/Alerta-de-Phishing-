@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Extensión de Alerta de Phishing",
+  "version": "1.0",
+  "description": "Te alerta cuando se detecta un enlace de phishing en los correos electrónicos.",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "notifications"
+  ],
+  "background": {
+    "service_worker": "chrome.runtime.onInstalled.js"  
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "48": "icon.png"
+  }
+}
